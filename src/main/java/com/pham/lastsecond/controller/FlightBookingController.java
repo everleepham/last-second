@@ -18,7 +18,7 @@ public class FlightBookingController {
 
     @PostMapping
     public ResponseEntity<FlightBookingDTO> createFlightBooking(@RequestBody FlightBookingDTO flightBookingDTO) {
-        flightBookingService.creatFlightBooking(flightBookingDTO);
+        flightBookingService.createFlightBooking(flightBookingDTO);
         return ResponseEntity.status(HttpStatus.CREATED).body(flightBookingDTO);
     }
 

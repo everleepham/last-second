@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: lastsecond
+
+
+server:
+  port: 8443
+  ssl:
+    key-store: keystore.p12
+    key-store-password: khanhpham2101
+    key-store-type: PKCS12
+    key-alias: mycert

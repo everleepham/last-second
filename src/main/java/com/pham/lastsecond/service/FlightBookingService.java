@@ -10,7 +10,7 @@ import java.util.Map;
 public class FlightBookingService {
     private final Map<Integer, FlightBookingDTO> bookings = new HashMap<>();
 
-    public void creatFlightBooking(FlightBookingDTO flightBookingDTO) {
+    public void createFlightBooking(FlightBookingDTO flightBookingDTO) {
         bookings.put(flightBookingDTO.getFlightId(), flightBookingDTO);
     }
 
