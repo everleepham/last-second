@@ -1,12 +1,16 @@
 spring:
   application:
     name: lastsecond
-#  security:
-#    user:
-#      name: lastsecond
-#      password: password
-
-
+    datasource:
+      url: jdbc:postgresql://localhost:5433/lastsecond_flight
+      username: postgres
+      password: khanhpham2101
+  liquibase:
+    enabled: true
+    change-log: classpath:db/changelog/V1__create_flight_booking_table.xml
+  jpa:
+    hibernate:
+      ddl-auto: validate
 
 server:
   port: 8443

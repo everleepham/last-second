@@ -7,10 +7,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Map;
+import java.util.List;
 
 @RestController
-@RequestMapping("/api/flights")
+@RequestMapping("/api/v1/flights")
 public class FlightBookingController {
 
     @Autowired
@@ -23,33 +23,26 @@ public class FlightBookingController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<FlightBookingDTO> getFlightBookingById(@PathVariable Integer id) {
+    public ResponseEntity<FlightBookingDTO> getFlightBookingById(@PathVariable Long id) {
         FlightBookingDTO flightBookingDTO = flightBookingService.getFlightById(id);
         return ResponseEntity.ok(flightBookingDTO);
     }
 
     @GetMapping
-    public ResponseEntity<Map<Integer, FlightBookingDTO>> getAllFlightBookings() {
-        Map<Integer, FlightBookingDTO> allBookings = flightBookingService.getAllFlights();
+    public ResponseEntity<List<FlightBookingDTO>> getAllFlightBookings() {
+        List<FlightBookingDTO> allBookings = flightBookingService.getAllFlights();
         return ResponseEntity.ok(allBookings);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<FlightBookingDTO> updateFlightBooking(@PathVariable Integer id, @RequestBody FlightBookingDTO flightBookingDTO) {
-        flightBookingService.updateFlight(flightBookingDTO);
+    public ResponseEntity<FlightBookingDTO> updateFlightBooking(@PathVariable Long id, @RequestBody FlightBookingDTO flightBookingDTO) {
+        flightBookingService.updateFlightBooking(id, flightBookingDTO);
         return ResponseEntity.ok(flightBookingDTO);
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteFlightBooking(@PathVariable Integer id) {
-        flightBookingService.deleteFlight(id);
+    public ResponseEntity<Void> deleteFlightBooking(@PathVariable Long id) {
+        flightBookingService.deleteFlightBooking(id);
         return ResponseEntity.noContent().build();
     }
 }
-
-
-
-
-
-
-

@@ -7,13 +7,14 @@ import lombok.Setter;
 @Getter
 @Setter
 public class FlightBookingDTO {
-    private int flightId;
+    private Long flightId;
     private String customerFname;
     private String customerLname;
-    private int customerId;
+    private Long customerId;
     private String departAirport;
     private LocalDateTime departDate;
     private String arrivalAirport;
-    private LocalDateTime arrivalDate;
-    private double price;
+    private String arrivalDate;
+    private Double price;
 }
+

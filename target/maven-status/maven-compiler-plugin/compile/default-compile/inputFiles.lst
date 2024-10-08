@@ -2,6 +2,8 @@
 /Users/everleepham/IdeaProjects/last-second/src/main/java/com/pham/lastsecond/config/SecurityConfig.java
 /Users/everleepham/IdeaProjects/last-second/src/main/java/com/pham/lastsecond/controller/FlightBookingController.java
 /Users/everleepham/IdeaProjects/last-second/src/main/java/com/pham/lastsecond/dto/FlightBookingDTO.java
+/Users/everleepham/IdeaProjects/last-second/src/main/java/com/pham/lastsecond/entity/FlightBooking.java
+/Users/everleepham/IdeaProjects/last-second/src/main/java/com/pham/lastsecond/entity/FlightBookingRepository.java
 /Users/everleepham/IdeaProjects/last-second/src/main/java/com/pham/lastsecond/error/FlightBookingNotFoundException.java
 /Users/everleepham/IdeaProjects/last-second/src/main/java/com/pham/lastsecond/error/GlobalExceptionHandler.java
 /Users/everleepham/IdeaProjects/last-second/src/main/java/com/pham/lastsecond/service/FlightBookingService.java
