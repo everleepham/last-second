@@ -1,8 +1,9 @@
 spring:
   application:
     name: lastsecond
-    datasource:
+  datasource:
       url: jdbc:postgresql://localhost:5433/lastsecond_flight
+      port: 5433
       username: postgres
       password: khanhpham2101
   liquibase:

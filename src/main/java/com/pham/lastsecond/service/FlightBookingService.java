@@ -74,7 +74,7 @@ public class FlightBookingService {
         flightBooking.setDepartAirport(flightBookingDTO.getDepartAirport());
         flightBooking.setDepartDate(flightBookingDTO.getDepartDate());
         flightBooking.setArrivalAirport(flightBookingDTO.getArrivalAirport());
-        flightBooking.setArrivalDate(flightBookingDTO.getArrivalDate());
+        flightBooking.setArrivalDate((flightBookingDTO.getArrivalDate()));
         flightBooking.setPrice(flightBookingDTO.getPrice());
         return flightBooking;
     }
