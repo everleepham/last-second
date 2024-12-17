@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="lastsecond-trip2" />
+        <module name="lastsecond-hotel" />
+        <module name="lastsecond-flight" />
+        <module name="demo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lastsecond-trip" target="22" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo" options="-parameters" />
+      <module name="lastsecond" options="" />
+      <module name="lastsecond-flight" options="-parameters" />
+      <module name="lastsecond-hotel" options="-parameters" />
+      <module name="lastsecond-trip" options="-parameters" />
+      <module name="lastsecond-trip2" options="-parameters" />
+    </option>
+  </component>
+</project>
